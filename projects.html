@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - mad1fy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-y: auto;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+        }
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .project-box {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .project-box img {
+            width: 45%;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .project-description {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1 class="title">My Projects</h1>
+        
+        <div class="project-box">
+            <h2>Kali Linux Live Boot Device</h2>
+            <p class="project-description">This project is what started everything for me. From a normal school laptop with just 2GB of RAM to a powerful Linux device capable of running Kali Linux as a live boot system. This device allows for penetration testing, security analysis, and more, all from a portable setup.</p>
+            <div>
+                <img src="https://i.postimg.cc/Bt95PzTJ/526023ea-3380-4165-8414-365558772359.jpg" alt="Kali Linux Live Boot Device">
+                <img src="https://i.postimg.cc/NjtVWJ3h/7a30c12c-36e7-460b-a6f6-5021d185424b.jpg" alt="Kali Linux Live Boot Device">
+            </div>
+            <div>
+                <img src="https://i.postimg.cc/Pq3RvtPh/09f906c6-14b1-4404-9dcd-c86165fdad78.jpg" alt="Kali Linux Live Boot Device">
+                <img src="https://i.postimg.cc/K8Q9CZ7L/49ec9006-3f21-4466-8a11-cc2d7f241fc9.jpg" alt="Kali Linux Live Boot Device">
+            </div>
+        </div>
+        
+        <div class="project-box">
+            <h2>Deauther Watch Handheld</h2>
+            <p class="project-description">This is a custom-built Deauther Watch handheld, designed for Wi-Fi security testing and pentesting. It features an ESP8266 microcontroller, a small OLED display, and multiple buttons for easy navigation. The device is housed in a compact lunchbox for portability and protection. This project is part of my ongoing research into cybersecurity tools and ethical hacking devices.</p>
+            <div>
+                <img src="https://i.postimg.cc/gkpbW2hB/216ffb81-055f-43e9-87f4-81bbbe65cb50.jpg" alt="Deauther Watch Handheld">
+            </div>
+            <p>Shoutout to <a href="https://huhn.me" target="_blank" style="color: lightblue;">Spacehuhn</a> for creating the firmware for the Deauther.</p>
+        </div>
+        
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof particlesJS !== "undefined") {
+                particlesJS("particles-js", {
+                    particles: {
+                        number: { value: 100 },
+                        size: { value: 2 },
+                        move: { speed: 2 }
+                    }
+                });
+                console.log('particles.js loaded successfully');
+            } else {
+                console.error("particles.js failed to load");
+            }
+        });
+    </script>
+</body>
+</html>
+
